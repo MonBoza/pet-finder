@@ -1,8 +1,26 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Finder</title>
 </head>
 <body>
-  <div>Hello world!</div>
-  <img src="./assets/images/stock-puppy-photo.jpg" alt="such a pup!"/>
+  <div class="container">
+    <h1>Pet Finder</h1>
+    <hr>
+    <form class="find-pet">
+        <label for="location">Location:</label>
+        <br />
+        <input id="location" type="text" name="location">
+        <br />
+        <br />
+        <button type="submit" class="btn">View List</button>
+    </form>
+    </div>
+    <div id="results">
+        <p id="displayResults"></p>
+    </div>
+  
 </body>
 </html>
