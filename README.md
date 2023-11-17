@@ -1,8 +1,9 @@
-# (Application Name)
+# Poem Finder
 
 #### (Brief Description of Application)
 
-#### By Monica Barboza
+#### By Monica Barboza 👩🏾‍💻 
+#### Co-authored By: Zuri Gallegos 👩🏾‍💻 
 
 ## Technologies Used
 
@@ -17,8 +18,12 @@
 * Jest
 
 ## Description
+ * This app allows user to input a word and it will display Poems with the word chosen.
+ * example: Here are the poems with the word: son
+ * Title: A Song of Autumn | Author: Adam Lindsay Gordon | Lines: ‘WHERE shall we go for our garlands glad,At the falling of the year,,When the burnt-up banks are yellow and sad,,When the boughs are yellow and sere?,Where are the old ones that once we had,,And when are the new ones near?,What shall we do for our garlands glad,At the falling of the year?’,‘Child! can I tell where the garlands go?,Can I say where the lost leaves veer,On the brown-burnt banks, when the wild winds blow,,When they drift through the dead-wood drear?,Girl! when the garlands of next year glow,,You may gather again, my dear—,But I go where the last year’s lost leaves go,At the falling of the year.’
 
-## Setup/Installation Requirements
+
+## Setup/Installation Requirements ⚙️ 🖥️
 
 * Open terminal or command prompt.
 * Clone the repository by running the following command to your desktop: git clone https://github.com/MonBoza/project.git
@@ -36,8 +41,8 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs_
+* 
 
 ## License
 Copyright 2023 MONICA BARBOZA
@@ -50,4 +55,4 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 Email: (mailto:MonBoza@gmail.com) 
 
-Copyright (c) Month day, 2023 Monica Barboza
+Copyright (c) November 16, 2023 Monica Barboza

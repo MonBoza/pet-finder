@@ -16,7 +16,7 @@ async function getPoem(keyword) {
 // UI Logic
 
 function printElements(response, keyword) {
-    document.querySelector('#displayResults').innerText = `Here are the poems with the word ${keyword}`
+    document.querySelector('#displayResults').innerText = `Here are the poems with the word: ${keyword}`
     const resultContainer = document.querySelector('#displayResults');
     response.forEach(function (poem){
         const listItem = document.createElement("li");

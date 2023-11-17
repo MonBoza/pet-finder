@@ -1,10 +1,39 @@
-https://api.petfinder.com/v2/types/{type}/breeds&access_token=7ok1LDJIYT0QaVbBkx4BNUKNLwBuNjX1rVyQs2xn2MFvHqX8AL
-
-curl -d "grant_type=client_credentials&client_id={X8wvEaDROEzUJEBPyS7clYDzxZMADyV2oWI9tM2Uw1Pa8CRPwm}&client_secret={RgheVwawLfP6MNG9UhhPeOs8a3dDRwgC7t48yhXm}" https://api.petfinder.com/v2/oauth2/token
-
-curl -H "Authorization: Bearer eyJ0eXA..." https://api.petfinder.com/v2/animals?type=dog&page=2
-
 https://poetrydb.org/title/Ozymandias/lines.json
 https://poetrydb.org/title
 https://poetrydb.org/title/A cat
 https://poetrydb.org/title/love
+
+response.forEach(function (poem) {
+        // Create a <li> element for the poem title
+        const listItems = document.createElement("li");
+        listItems.textContent = `Title: ${poem.title} | By: ${poem.author}`;
+
+        // Append the <li> element to the resultContainer
+        resultContainer.appendChild(listItems);
+
+        // Create a <hr> element for separation
+        const hr = document.createElement("hr");
+
+        // Append the <hr> element to the resultContainer
+        resultContainer.appendChild(hr);
+    });
+}
+
+function printError(error, keyword) {
+    let errorMessage = '';
+
+    // Check if the keyword is empty or doesn't match certain criteria
+    if (!keyword || !isValidKeyword(keyword)) {
+        errorMessage = `Invalid keyword: ${keyword}. Please enter a valid keyword.`;
+    } else {
+        errorMessage = `There was an error accessing the poem data for ${keyword}: ${error}.`;
+    }
+
+    document.querySelector('#displayResults').innerText = errorMessage;
+}
+
+// Function to check if the keyword is valid (you can customize this based on your criteria)
+function isValidKeyword(keyword) {
+    // Example: Check if the keyword has at least 3 characters
+    return keyword.length >= 3;
+}
