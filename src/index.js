@@ -45,7 +45,13 @@ function handleFormSubmission(event) {
     event.preventDefault();
     const keyword = document.querySelector('#keyWord').value;
     document.querySelector('#keyWord').value;
-    getPoem(keyword);
+    
+    if (isValidKeyword(keyword)) {
+      getPoem(keyword);
+    } else {
+      printError('Invalid keyword. Please enter a valid keyword.', keyword);
+    }
+    
 }
 
 window.addEventListener("load", function () {
